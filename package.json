@@ -2,7 +2,13 @@
   "name": "nestweaver-website",
   "version": "0.0.1",
   "private": true,
+  "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kehl-io/nestweaver-website.git"
+  },
+  "homepage": "https://nestweaver.kehl.io",
   "engines": {
     "node": ">=24"
   },
