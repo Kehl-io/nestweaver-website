@@ -65,7 +65,10 @@ export const GET: APIRoute = async () => {
   );
 
   const resvg = new Resvg(svg, { fitTo: { mode: 'width', value: 1200 } });
-  const png = resvg.render().asPng();
+  const rawPng = resvg.render().asPng();
+
+  const { default: sharp } = await import('sharp');
+  const png = await sharp(rawPng).png({ quality: 80, compressionLevel: 9 }).toBuffer();
 
   return new Response(png, {
     headers: {
