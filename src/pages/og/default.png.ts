@@ -4,12 +4,10 @@ import { Resvg } from '@resvg/resvg-js';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-const interFont = readFileSync(
-  join(process.cwd(), 'node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2'),
-);
+const interFont = readFileSync(join(process.cwd(), 'src/assets/fonts/Inter-400.ttf'));
 
 const michromaFont = readFileSync(
-  join(process.cwd(), 'node_modules/@fontsource/michroma/files/michroma-latin-400-normal.woff2'),
+  join(process.cwd(), 'node_modules/@fontsource/michroma/files/michroma-latin-400-normal.woff'),
 );
 
 export const GET: APIRoute = async () => {
