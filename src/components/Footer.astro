@@ -1,0 +1,26 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer role="contentinfo" class="bg-ink-950 border-ink-800 border-t px-6 pb-12 pt-12 md:px-8">
+  <div class="mx-auto max-w-6xl">
+    <div class="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+      <div class="flex flex-col gap-3">
+        <a href="/" aria-label="NestWeaver home" class="inline-block w-fit">
+          <img src="/images/logo-horizontal-dark.svg" alt="NestWeaver" width="140" height="35" loading="lazy" />
+        </a>
+        <p class="text-ink-300 max-w-xs text-sm">Code intelligence knowledge graph for AI agents. Open source, MIT license.</p>
+      </div>
+      <nav aria-label="Footer" class="flex flex-col gap-2 text-sm">
+        <a href="https://docs.nestweaver.kehl.io" class="text-ink-300 hover:text-cobalt transition-colors">Documentation</a>
+        <a href="https://github.com/Kehl-io/nestweaver" target="_blank" rel="noopener noreferrer" class="text-ink-300 hover:text-cobalt transition-colors">GitHub</a>
+        <a href="https://github.com/Kehl-io/nestweaver/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" class="text-ink-300 hover:text-cobalt transition-colors">MIT License</a>
+      </nav>
+    </div>
+    <div class="border-ink-800 text-ink-500 mt-8 flex items-center gap-2 border-t pt-6 text-xs">
+      <span>&copy; {year} NestWeaver</span>
+      <span class="text-ink-700">·</span>
+      <span>Built by <a href="https://kehl.io" target="_blank" rel="noopener noreferrer" class="text-ink-300 hover:text-cobalt transition-colors">kehl.io</a></span>
+    </div>
+  </div>
+</footer>

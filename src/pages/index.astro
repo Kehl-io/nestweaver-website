@@ -1,0 +1,39 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/Header.astro';
+import Hero from '@/components/Hero.astro';
+import Problem from '@/components/Problem.astro';
+import HowItWorks from '@/components/HowItWorks.astro';
+import TokenEfficiency from '@/components/TokenEfficiency.astro';
+import Features from '@/components/Features.astro';
+import GetStarted from '@/components/GetStarted.astro';
+import Footer from '@/components/Footer.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'NestWeaver',
+  description: 'Code intelligence knowledge graph for AI agents. Precomputed answers about symbols, dependencies, and call graphs — no source reading required.',
+  applicationCategory: 'DeveloperApplication',
+  operatingSystem: 'macOS, Linux, Windows',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  license: 'https://opensource.org/licenses/MIT',
+  downloadUrl: 'https://github.com/Kehl-io/nestweaver/releases',
+  softwareVersion: '2.0.0',
+  programmingLanguage: 'Rust',
+  featureList: 'Code knowledge graph, 40 MCP tools, 32 language support, Personalized PageRank context selection, Token budget optimization, Semantic search, Obsidian vault integration, Web UI visualization',
+  screenshot: 'https://nestweaver.kehl.io/images/web-ui-screenshot.png',
+  author: { '@type': 'Person', name: 'Kory Kehl', url: 'https://kehl.io' },
+};
+---
+
+<BaseLayout jsonLd={jsonLd}>
+  <Header slot="header" />
+  <Hero />
+  <Problem />
+  <HowItWorks />
+  <TokenEfficiency />
+  <Features />
+  <GetStarted />
+  <Footer slot="footer" />
+</BaseLayout>
