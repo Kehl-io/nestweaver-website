@@ -3,7 +3,7 @@ import '@/styles/global.css';
 
 import interFont from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
 import michromaFont from '@fontsource/michroma/files/michroma-latin-400-normal.woff2?url';
-import jetbrainsFont from '@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2?url';
+
 
 interface Props {
   title?: string;
@@ -44,7 +44,7 @@ const ogImage = `${site}/og/default.png`;
     {jsonLd && <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <link rel="preload" href={interFont} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href={michromaFont} as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href={jetbrainsFont} as="font" type="font/woff2" crossorigin />
+
     <link rel="sitemap" href="/sitemap.xml" />
   </head>
   <body>

@@ -26,6 +26,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   background-color: var(--ink-950);
   color: var(--ink-50);
   font-family: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;

@@ -1,6 +1,6 @@
 ---
 const navLinks = [
-  { href: 'https://docs.nestweaver.kehl.io', label: 'Docs' },
+  { href: 'https://docs.nestweaver.kehl.io', label: 'Docs', external: true },
   { href: 'https://github.com/Kehl-io/nestweaver', label: 'GitHub', external: true },
   { href: 'https://kehl.io', label: 'kehl.io', external: true },
 ];
@@ -53,6 +53,7 @@ const navLinks = [
   #site-header.is-scrolled {
     background-color: oklch(8% 0.02 220 / 0.92);
     backdrop-filter: blur(14px);
+    border-color: oklch(0.84 0.11 210 / 0.12);
     border-color: oklch(from var(--halo) l c h / 0.12);
   }
   #site-header.is-scrolled #header-inner { height: 3.75rem; }
