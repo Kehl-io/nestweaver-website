@@ -11,7 +11,7 @@ export default tseslint.config(
   ...tseslint.configs.recommended,
   ...eslintPluginAstro.configs.recommended,
   {
-    files: ['**/*.{ts,tsx,mjs,astro}'],
+    files: ['**/*.{ts,tsx,mjs}'],
     plugins: {
       prettier: eslintPluginPrettier,
     },
@@ -25,6 +25,26 @@ export default tseslint.config(
         { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
       ],
       '@typescript-eslint/no-explicit-any': 'warn',
+    },
+  },
+  {
+    files: ['**/*.astro'],
+    rules: {
+      'prettier/prettier': 'off',
+      'prefer-const': 'error',
+      'no-var': 'error',
+      'no-debugger': 'error',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      ],
+      '@typescript-eslint/no-explicit-any': 'warn',
+    },
+  },
+  {
+    files: ['**/*.astro/*.ts'],
+    rules: {
+      'prettier/prettier': 'off',
     },
   },
 );

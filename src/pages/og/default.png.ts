@@ -70,7 +70,7 @@ export const GET: APIRoute = async () => {
   const { default: sharp } = await import('sharp');
   const png = await sharp(rawPng).png({ quality: 80, compressionLevel: 9 }).toBuffer();
 
-  return new Response(png, {
+  return new Response(png as unknown as BodyInit, {
     headers: {
       'Content-Type': 'image/png',
       'Cache-Control': 'public, max-age=86400',
