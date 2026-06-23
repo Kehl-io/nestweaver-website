@@ -1,0 +1,65 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource/michroma';
+@import '@fontsource-variable/jetbrains-mono';
+
+@import './tokens.css';
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Michroma', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'Courier New', monospace;
+
+  --color-cobalt: var(--cobalt);
+  --color-halo: var(--halo);
+  --color-deep: var(--deep);
+  --color-dusk: var(--dusk);
+  --color-spark: var(--spark);
+  --color-ink-950: var(--ink-950);
+  --color-ink-900: var(--ink-900);
+  --color-ink-800: var(--ink-800);
+  --color-ink-700: var(--ink-700);
+  --color-ink-500: var(--ink-500);
+  --color-ink-300: var(--ink-300);
+  --color-ink-100: var(--ink-100);
+  --color-ink-50: var(--ink-50);
+}
+
+html {
+  background-color: var(--ink-950);
+  color: var(--ink-50);
+  font-family: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:focus-visible {
+  outline: 2px solid var(--halo);
+  outline-offset: 3px;
+}
+
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-to-content:focus {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  padding: 0.5rem 1rem;
+  background: var(--cobalt);
+  color: var(--ink-950);
+  border-radius: 0.25rem;
+  font-weight: 600;
+  z-index: 9999;
+}
