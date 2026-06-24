@@ -1,6 +1,21 @@
-# NestWeaver Website
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-full-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/logo-full-light.svg">
+    <img src="assets/logo-full-dark.svg" width="400" alt="NestWeaver">
+  </picture>
+</p>
 
-Marketing site for NestWeaver — [nestweaver.kehl.io](https://nestweaver.kehl.io)
+<p align="center">
+  <strong>Marketing site for NestWeaver — <a href="https://nestweaver.kehl.io">nestweaver.kehl.io</a></strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Kehl-io/nestweaver-website/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/Kehl-io/nestweaver-website/ci.yml?branch=main&label=CI&style=flat-square" alt="CI"></a>
+  <a href="https://github.com/Kehl-io/nestweaver-website/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License"></a>
+</p>
+
+---
 
 ## Tech Stack
 
@@ -41,6 +56,7 @@ Automated via GitHub Actions:
 
 - Push to `main` triggers [release-please](https://github.com/googleapis/release-please) to create/update a release PR.
 - Merging a version tag triggers a Cloudflare Pages deploy.
+- PRs get preview deploys with unique URLs.
 
 ## Links
 
@@ -51,3 +67,13 @@ Automated via GitHub Actions:
 ## License
 
 [MIT](LICENSE)
+
+---
+
+<p align="center">
+  <a href="https://kehl.io">
+    <img src="assets/kehl-io/kehl-icon.png" width="56" alt="kehl.io" />
+  </a>
+  <br>
+  <sub>Built by <a href="https://kehl.io">kehl.io</a></sub>
+</p>
