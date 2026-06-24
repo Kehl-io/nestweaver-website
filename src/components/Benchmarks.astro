@@ -8,96 +8,99 @@
     </p>
 
     <!-- Hero metric row -->
-    <div class="grid grid-cols-1 gap-6 sm:grid-cols-3 mb-12">
+    <div class="mb-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
       <div class="bg-ink-900 border-ink-800 rounded-xl border p-6 text-center">
-        <div class="text-cobalt font-mono text-3xl md:text-4xl font-bold mb-2">17-34x</div>
-        <div class="text-ink-50 text-lg font-semibold mb-1">Faster Queries</div>
+        <div class="text-cobalt mb-2 font-mono text-3xl font-bold md:text-4xl">17-34x</div>
+        <div class="text-ink-50 mb-1 text-lg font-semibold">Faster Queries</div>
         <div class="text-ink-400 text-sm">vs Graphify on repos with 14K-44K files</div>
       </div>
       <div class="bg-ink-900 border-ink-800 rounded-xl border p-6 text-center">
-        <div class="text-cobalt font-mono text-3xl md:text-4xl font-bold mb-2">632ms</div>
-        <div class="text-ink-50 text-lg font-semibold mb-1">Incremental Re-index</div>
+        <div class="text-cobalt mb-2 font-mono text-3xl font-bold md:text-4xl">632ms</div>
+        <div class="text-ink-50 mb-1 text-lg font-semibold">Incremental Re-index</div>
         <div class="text-ink-400 text-sm">after a single file change (Tailwind CSS)</div>
       </div>
       <div class="bg-ink-900 border-ink-800 rounded-xl border p-6 text-center">
-        <div class="text-cobalt font-mono text-3xl md:text-4xl font-bold mb-2">14.8M</div>
-        <div class="text-ink-50 text-lg font-semibold mb-1">Edges Extracted</div>
+        <div class="text-cobalt mb-2 font-mono text-3xl font-bold md:text-4xl">14.8M</div>
+        <div class="text-ink-50 mb-1 text-lg font-semibold">Edges Extracted</div>
         <div class="text-ink-400 text-sm">Elasticsearch — 511K symbols in one graph</div>
       </div>
     </div>
 
     <!-- Query Speed comparison table -->
-    <div class="bg-ink-900 border-ink-800 rounded-xl border overflow-hidden mb-12">
+    <div class="bg-ink-900 border-ink-800 mb-12 overflow-hidden rounded-xl border">
       <table class="w-full text-sm">
         <thead>
           <tr class="bg-ink-800/50 text-ink-300 text-left">
             <th class="px-4 py-3 font-medium">Repository</th>
-            <th class="px-4 py-3 font-medium text-right">NestWeaver</th>
-            <th class="px-4 py-3 font-medium text-right">Graphify</th>
-            <th class="px-4 py-3 font-medium text-right">GitNexus</th>
+            <th class="px-4 py-3 text-right font-medium">NestWeaver</th>
+            <th class="px-4 py-3 text-right font-medium">Graphify</th>
+            <th class="px-4 py-3 text-right font-medium">GitNexus</th>
           </tr>
         </thead>
-        <tbody class="divide-y divide-ink-800/50">
+        <tbody class="divide-ink-800/50 divide-y">
           <tr>
             <td class="px-4 py-3">
               <span class="text-ink-50">Tailwind CSS</span>
               <span class="text-ink-500 ml-2 text-xs">542 files</span>
             </td>
-            <td class="px-4 py-3 text-right text-cobalt font-mono font-semibold">157ms</td>
-            <td class="px-4 py-3 text-right text-ink-300 font-mono">185ms</td>
-            <td class="px-4 py-3 text-right text-ink-300 font-mono">700ms</td>
+            <td class="text-cobalt px-4 py-3 text-right font-mono font-semibold">157ms</td>
+            <td class="text-ink-300 px-4 py-3 text-right font-mono">185ms</td>
+            <td class="text-ink-300 px-4 py-3 text-right font-mono">700ms</td>
           </tr>
           <tr>
             <td class="px-4 py-3">
               <span class="text-ink-50">Deno</span>
               <span class="text-ink-500 ml-2 text-xs">14,136 files</span>
             </td>
-            <td class="px-4 py-3 text-right text-cobalt font-mono font-semibold">82ms</td>
-            <td class="px-4 py-3 text-right text-ink-300 font-mono">1,355ms</td>
-            <td class="px-4 py-3 text-right text-ink-300 font-mono">908ms</td>
+            <td class="text-cobalt px-4 py-3 text-right font-mono font-semibold">82ms</td>
+            <td class="text-ink-300 px-4 py-3 text-right font-mono">1,355ms</td>
+            <td class="text-ink-300 px-4 py-3 text-right font-mono">908ms</td>
           </tr>
           <tr>
             <td class="px-4 py-3">
               <span class="text-ink-50">Next.js</span>
               <span class="text-ink-500 ml-2 text-xs">29,402 files</span>
             </td>
-            <td class="px-4 py-3 text-right text-cobalt font-mono font-semibold">71ms</td>
-            <td class="px-4 py-3 text-right text-ink-300 font-mono">2,440ms</td>
-            <td class="px-4 py-3 text-right text-ink-300 font-mono">1,116ms</td>
+            <td class="text-cobalt px-4 py-3 text-right font-mono font-semibold">71ms</td>
+            <td class="text-ink-300 px-4 py-3 text-right font-mono">2,440ms</td>
+            <td class="text-ink-300 px-4 py-3 text-right font-mono">1,116ms</td>
           </tr>
           <tr>
             <td class="px-4 py-3">
               <span class="text-ink-50">Elasticsearch</span>
               <span class="text-ink-500 ml-2 text-xs">43,806 files</span>
             </td>
-            <td class="px-4 py-3 text-right text-cobalt font-mono font-semibold">617ms</td>
+            <td class="text-cobalt px-4 py-3 text-right font-mono font-semibold">617ms</td>
             <td class="px-4 py-3 text-right text-red-400/70 italic">crashed</td>
-            <td class="px-4 py-3 text-right text-ink-300 font-mono">1,573ms</td>
+            <td class="text-ink-300 px-4 py-3 text-right font-mono">1,573ms</td>
           </tr>
         </tbody>
       </table>
     </div>
 
     <!-- Quality callout card -->
-    <div class="bg-ink-900 border-ink-800 rounded-xl border p-8 mb-8">
-      <h3 class="text-ink-50 text-xl font-semibold mb-6">Speed without accuracy is meaningless</h3>
+    <div class="bg-ink-900 border-ink-800 mb-8 rounded-xl border p-8">
+      <h3 class="text-ink-50 mb-6 text-xl font-semibold">Speed without accuracy is meaningless</h3>
       <div class="space-y-4">
         <div class="flex items-start gap-3">
           <span class="text-cobalt mt-0.5 shrink-0" aria-hidden="true">→</span>
           <p class="text-ink-300 text-sm leading-relaxed">
-            <span class="text-ink-50 font-semibold">NestWeaver</span> — 30 connected symbols per query, ranked by PageRank, with full function signatures and cross-file relationships
+            <span class="text-ink-50 font-semibold">NestWeaver</span> — 30 connected symbols per query,
+            ranked by PageRank, with full function signatures and cross-file relationships
           </p>
         </div>
         <div class="flex items-start gap-3">
           <span class="text-ink-500 mt-0.5 shrink-0" aria-hidden="true">→</span>
           <p class="text-ink-400 text-sm leading-relaxed">
-            <span class="text-ink-300 font-semibold">Graphify</span> — Returns file-level nodes, but 9-15% are garbage stubs (vitest config, node_path, etc.) with no relevance ranking
+            <span class="text-ink-300 font-semibold">Graphify</span> — Returns file-level nodes, but 9-15%
+            are garbage stubs (vitest config, node_path, etc.) with no relevance ranking
           </p>
         </div>
         <div class="flex items-start gap-3">
           <span class="text-ink-500 mt-0.5 shrink-0" aria-hidden="true">→</span>
           <p class="text-ink-400 text-sm leading-relaxed">
-            <span class="text-ink-300 font-semibold">GitNexus</span> — Finds symbol definitions but returns 0 callers, 0 callees — locates code without explaining how it connects
+            <span class="text-ink-300 font-semibold">GitNexus</span> — Finds symbol definitions but returns
+            0 callers, 0 callees — locates code without explaining how it connects
           </p>
         </div>
       </div>
@@ -105,7 +108,10 @@
 
     <!-- CTA link -->
     <div class="text-center">
-      <a href="https://kehl.io/writing/nestweaver-benchmarks" class="text-cobalt hover:text-halo transition-colors text-sm font-medium">
+      <a
+        href="https://kehl.io/writing/nestweaver-benchmarks"
+        class="text-cobalt hover:text-halo text-sm font-medium transition-colors"
+      >
         Read the full methodology →
       </a>
     </div>
