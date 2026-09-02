@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1](https://github.com/Kehl-io/nestweaver-website/compare/v0.1.0...v0.1.1) (2026-09-02)
+
+
+### Bug Fixes
+
+* the install command on the homepage 404s ([acd28e7](https://github.com/Kehl-io/nestweaver-website/commit/acd28e748fb699d3bce31662963f1be283d81aa2))
+* the install command on the homepage 404s ([e7ee26e](https://github.com/Kehl-io/nestweaver-website/commit/e7ee26ea447a1ca8b59b9b31918fb64953aaaed4))
+
 ## [0.1.0](https://github.com/Kehl-io/nestweaver-website/compare/v0.0.1...v0.1.0) (2026-06-24)
 
 
