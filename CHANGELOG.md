@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/Kehl-io/nestweaver-website/compare/v0.1.1...v0.1.2) (2026-10-08)
+
+
+### Bug Fixes
+
+* correct install, tool count, and release facts ([#4](https://github.com/Kehl-io/nestweaver-website/issues/4)) ([d74b258](https://github.com/Kehl-io/nestweaver-website/commit/d74b2583389b24718720cc75e08626a4b20054f7))
+
 ## [0.1.1](https://github.com/Kehl-io/nestweaver-website/compare/v0.1.0...v0.1.1) (2026-09-02)
 
 
