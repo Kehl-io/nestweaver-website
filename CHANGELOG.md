@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/Kehl-io/nestweaver-website/compare/v0.1.2...v0.2.0) (2026-10-09)
+
+
+### Features
+
+* link the npm package from the marketing site ([#6](https://github.com/Kehl-io/nestweaver-website/issues/6)) ([620f663](https://github.com/Kehl-io/nestweaver-website/commit/620f663e6d7fbaca78344aba569a82cefb995ffe))
+
 ## [0.1.2](https://github.com/Kehl-io/nestweaver-website/compare/v0.1.1...v0.1.2) (2026-10-08)
 
 
