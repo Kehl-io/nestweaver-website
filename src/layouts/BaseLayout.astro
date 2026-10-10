@@ -8,12 +8,14 @@ interface Props {
   title?: string;
   description?: string;
   jsonLd?: object;
+  noindex?: boolean;
 }
 
 const {
   title = 'NestWeaver — Code Intelligence for AI Agents',
   description = 'Your codebase as a queryable graph — built for AI agents. Precomputed answers about symbols, dependencies, and call graphs — no source reading required.',
   jsonLd,
+  noindex = false,
 } = Astro.props;
 
 const site = 'https://nestweaver.kehl.io';
@@ -29,10 +31,16 @@ const ogImage = `${site}/og/default.png`;
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonicalUrl} />
+    {
+      noindex ? (
+        <meta name="robots" content="noindex" />
+      ) : (
+        <link rel="canonical" href={canonicalUrl} />
+      )
+    }
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonicalUrl} />
+    {!noindex && <meta property="og:url" content={canonicalUrl} />}
     <meta property="og:image" content={ogImage} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="NestWeaver" />
