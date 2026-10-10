@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/Kehl-io/nestweaver-website/compare/v0.2.1...v0.2.2) (2026-10-10)
+
+
+### Bug Fixes
+
+* return real 404 pages and correct sitemap metadata ([#10](https://github.com/Kehl-io/nestweaver-website/issues/10)) ([4366809](https://github.com/Kehl-io/nestweaver-website/commit/43668095e85c5a29203bfbeecb2a34287e97c72b))
+
 ## [0.2.1](https://github.com/Kehl-io/nestweaver-website/compare/v0.2.0...v0.2.1) (2026-10-10)
 
 
