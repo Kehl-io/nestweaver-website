@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/Kehl-io/nestweaver-website/compare/v0.2.0...v0.2.1) (2026-10-10)
+
+
+### Bug Fixes
+
+* set the published software version to 12.0.1 ([#8](https://github.com/Kehl-io/nestweaver-website/issues/8)) ([e9f1d9f](https://github.com/Kehl-io/nestweaver-website/commit/e9f1d9f64aaf71812dfa2fc4f667f06ca645147e))
+
 ## [0.2.0](https://github.com/Kehl-io/nestweaver-website/compare/v0.1.2...v0.2.0) (2026-10-09)
 
 
