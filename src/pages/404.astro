@@ -1,0 +1,30 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+---
+
+<BaseLayout
+  title="Page not found — NestWeaver"
+  description="This page could not be found. Visit NestWeaver's homepage or documentation."
+  noindex
+>
+  <Header slot="header" />
+  <section class="mx-auto flex min-h-[60vh] max-w-3xl flex-col justify-center px-6 py-20 md:px-8">
+    <p class="text-cobalt font-mono text-sm">404</p>
+    <h1 class="font-display mt-4 text-3xl leading-snug md:text-4xl">Page not found</h1>
+    <p class="text-ink-300 mt-6">This page may have moved, or the address may be incorrect.</p>
+    <div class="mt-8 flex flex-wrap gap-6">
+      <a href="/" class="text-cobalt hover:text-halo underline underline-offset-4">
+        Return to NestWeaver
+      </a>
+      <a
+        href="https://docs.nestweaver.kehl.io/"
+        class="text-cobalt hover:text-halo underline underline-offset-4"
+      >
+        Read the documentation
+      </a>
+    </div>
+  </section>
+  <Footer slot="footer" />
+</BaseLayout>
