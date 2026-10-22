@@ -16,12 +16,18 @@
           </div>
         </div>
         <p class="text-ink-400 text-sm">
-          Or download <a
+          Needs Node.js 18+ on macOS 13.3+ or Linux with glibc 2.35+ (x86_64 or arm64). Or download
+          a checksummed <a
             href="https://github.com/Kehl-io/nestweaver/releases"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-cobalt hover:text-halo underline underline-offset-2">pre-built binaries</a
-          > for macOS and Linux.
+            class="text-cobalt hover:text-halo underline underline-offset-2">release archive</a
+          > and keep the extracted folder intact: Linux archives ship a <code class="text-ink-200"
+            >lib/</code
+          > runtime next to the binary. See the <a
+            href="https://docs.nestweaver.kehl.io/getting-started/"
+            class="text-cobalt hover:text-halo underline underline-offset-2">install guide</a
+          >.
         </p>
       </div>
     </div>
@@ -30,7 +36,7 @@
       <div class="bg-ink-950 text-ink-100 space-y-1 rounded-lg px-4 py-3 font-mono text-sm">
         <div>
           <span class="text-ink-500 select-none" aria-hidden="true">$ </span>nestweaver setup <span
-            class="text-ink-500 ml-2"># configures 16 AI tools</span
+            class="text-ink-500 ml-2"># connects your AI tools</span
           >
         </div>
         <div>
@@ -38,6 +44,30 @@
           . <span class="text-ink-500 ml-2"># parses your codebase</span>
         </div>
       </div>
+    </div>
+    <div class="border-ink-800 bg-ink-900 mb-8 rounded-xl border p-6">
+      <h3 class="text-ink-50 mb-2 font-semibold">Upgrading to 12.2.2</h3>
+      <p class="text-ink-400 mb-4 text-sm">
+        12.2.2 changes how calls and imports resolve (resolver generation 12) and how vault links
+        are derived. Re-index each repository once, and refresh each vault:
+      </p>
+      <div class="bg-ink-950 text-ink-100 space-y-1 rounded-lg px-4 py-3 font-mono text-sm">
+        <div>
+          <span class="text-ink-500 select-none" aria-hidden="true">$ </span>nestweaver index --repo
+          &lt;path&gt; --force
+        </div>
+        <div>
+          <span class="text-ink-500 select-none" aria-hidden="true">$ </span>nestweaver brain
+          refresh &lt;vault&gt;
+        </div>
+      </div>
+      <p class="text-ink-400 mt-3 text-sm">
+        A plain <code class="text-ink-200">index</code> is not enough: the repo is already at HEAD, so
+        nothing gets rewritten. <a
+          href="https://docs.nestweaver.kehl.io/cli/indexing/"
+          class="text-cobalt hover:text-halo underline underline-offset-2">Upgrade details</a
+        >
+      </p>
     </div>
     <div class="text-center">
       <a
