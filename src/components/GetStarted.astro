@@ -46,10 +46,11 @@
       </div>
     </div>
     <div class="border-ink-800 bg-ink-900 mb-8 rounded-xl border p-6">
-      <h3 class="text-ink-50 mb-2 font-semibold">Upgrading to 12.2.2</h3>
+      <h3 class="text-ink-50 mb-2 font-semibold">Upgrading to 12.2.3</h3>
       <p class="text-ink-400 mb-4 text-sm">
-        12.2.2 changes how calls and imports resolve (resolver generation 12) and how vault links
-        are derived. Re-index each repository once, and refresh each vault:
+        12.2.3 hardens Go resolution, restore safety, source freshness and embedding recovery.
+        Resolver generation 17 requires one forced re-index per repository, then a refresh of each
+        vault:
       </p>
       <div class="bg-ink-950 text-ink-100 space-y-1 rounded-lg px-4 py-3 font-mono text-sm">
         <div>
@@ -64,7 +65,7 @@
       <p class="text-ink-400 mt-3 text-sm">
         A plain <code class="text-ink-200">index</code> is not enough: the repo is already at HEAD, so
         nothing gets rewritten. <a
-          href="https://docs.nestweaver.kehl.io/cli/indexing/#upgrading-to-1222"
+          href="https://docs.nestweaver.kehl.io/cli/indexing/#upgrading-to-1223"
           class="text-cobalt hover:text-halo underline underline-offset-2">Upgrade details</a
         >
       </p>
