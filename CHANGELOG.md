@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/Kehl-io/nestweaver-website/compare/v0.2.3...v0.2.4) (2026-10-27)
+
+
+### Bug Fixes
+
+* align NestWeaver site with 12.2.3 upgrade requirements ([#14](https://github.com/Kehl-io/nestweaver-website/issues/14)) ([da24281](https://github.com/Kehl-io/nestweaver-website/commit/da2428175cb85e78fb682a37c0d2b48515420c40))
+
 ## [0.2.3](https://github.com/Kehl-io/nestweaver-website/compare/v0.2.2...v0.2.3) (2026-10-22)
 
 
