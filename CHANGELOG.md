@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.5](https://github.com/Kehl-io/nestweaver-website/compare/v0.2.4...v0.2.5) (2026-10-28)
+
+
+### Bug Fixes
+
+* publish NestWeaver 12.2.4 upgrade and agent guidance ([#16](https://github.com/Kehl-io/nestweaver-website/issues/16)) ([9d89139](https://github.com/Kehl-io/nestweaver-website/commit/9d89139c642a075cd4b0364930e40545850149da))
+
 ## [0.2.4](https://github.com/Kehl-io/nestweaver-website/compare/v0.2.3...v0.2.4) (2026-10-27)
 
 
