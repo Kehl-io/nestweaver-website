@@ -4,6 +4,18 @@
       Get started
     </h2>
     <div class="border-ink-800 bg-ink-900 mb-8 rounded-xl border p-6">
+      <h3 class="text-ink-50 mb-2 font-semibold">Upgrading to 12.2.5</h3>
+      <p class="text-ink-400 text-sm">
+        Stop the old daemon and back up with the previous binary before upgrading an existing
+        database. LadybugDB can migrate storage format 47 to 49. After upgrading, force re-index
+        each repository once for resolver generation 21. <a
+          href="https://docs.nestweaver.kehl.io/guides/release-12-2-5/"
+          class="text-cobalt hover:text-halo underline underline-offset-2"
+          >Upgrade and rollback steps</a
+        >
+      </p>
+    </div>
+    <div class="border-ink-800 bg-ink-900 mb-8 rounded-xl border p-6">
       <h3 class="text-ink-50 mb-4 font-semibold">Install</h3>
       <div class="space-y-3">
         <div>
@@ -44,31 +56,6 @@
           . <span class="text-ink-500 ml-2"># parses your codebase</span>
         </div>
       </div>
-    </div>
-    <div class="border-ink-800 bg-ink-900 mb-8 rounded-xl border p-6">
-      <h3 class="text-ink-50 mb-2 font-semibold">Upgrading to 12.2.4</h3>
-      <p class="text-ink-400 mb-4 text-sm">
-        12.2.4 repairs PHP and Scala indexing, vault links, selected-file freshness and backup
-        recovery. Resolver generation 19 requires one forced re-index per repository, then a refresh
-        of each vault:
-      </p>
-      <div class="bg-ink-950 text-ink-100 space-y-1 rounded-lg px-4 py-3 font-mono text-sm">
-        <div>
-          <span class="text-ink-500 select-none" aria-hidden="true">$ </span>nestweaver index --repo
-          &lt;path&gt; --force
-        </div>
-        <div>
-          <span class="text-ink-500 select-none" aria-hidden="true">$ </span>nestweaver brain
-          refresh &lt;vault&gt;
-        </div>
-      </div>
-      <p class="text-ink-400 mt-3 text-sm">
-        A plain <code class="text-ink-200">index</code> is not enough: the repo is already at HEAD, so
-        nothing gets rewritten. <a
-          href="https://docs.nestweaver.kehl.io/guides/release-12-2-4/"
-          class="text-cobalt hover:text-halo underline underline-offset-2">Upgrade details</a
-        >
-      </p>
     </div>
     <div class="text-center">
       <a
