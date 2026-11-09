@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.7](https://github.com/Kehl-io/nestweaver-website/compare/v0.2.6...v0.2.7) (2026-11-09)
+
+
+### Bug Fixes
+
+* update NestWeaver 12.2.6 install guidance ([#20](https://github.com/Kehl-io/nestweaver-website/issues/20)) ([03b8752](https://github.com/Kehl-io/nestweaver-website/commit/03b8752617bb98ac1a03d58baeba476044277fd7))
+
 ## [0.2.6](https://github.com/Kehl-io/nestweaver-website/compare/v0.2.5...v0.2.6) (2026-11-06)
 
 
