@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.8](https://github.com/Kehl-io/nestweaver-website/compare/v0.2.7...v0.2.8) (2026-11-13)
+
+
+### Bug Fixes
+
+* align product guidance with NestWeaver 12.2.7 ([#22](https://github.com/Kehl-io/nestweaver-website/issues/22)) ([e924c96](https://github.com/Kehl-io/nestweaver-website/commit/e924c96122a6eb60f8288e1ebcece0784a4ddb9b))
+
 ## [0.2.7](https://github.com/Kehl-io/nestweaver-website/compare/v0.2.6...v0.2.7) (2026-11-09)
 
 
