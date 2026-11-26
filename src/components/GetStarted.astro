@@ -4,14 +4,12 @@
       Get started
     </h2>
     <div class="border-ink-800 bg-ink-900 mb-8 rounded-xl border p-6">
-      <h3 class="text-ink-50 mb-2 font-semibold">Upgrading to 12.2.8</h3>
+      <h3 class="text-ink-50 mb-2 font-semibold">Upgrading to 12.2.9</h3>
       <p class="text-ink-400 text-sm">
-        Stop the old daemon and back up with the previous binary before installing 12.2.8. LadybugDB
-        0.22.3 retains storage format 49. Databases from an older engine can migrate from storage
-        format 47 to 49, so rollback needs the pre-upgrade backup. Force re-index each repository
-        once for resolver generation 24 and parsed cache 18. Refresh any vault that still reports
-        stale Markdown derivation. <a
-          href="https://docs.nestweaver.kehl.io/guides/release-12-2-8/"
+        Stop the old daemon and back up with the previous binary before installing 12.2.9. Run
+        `stale-check` after upgrading and force-index any repository reported as
+        `outdated_resolver`. A current 12.2.8 graph stays compatible. <a
+          href="https://docs.nestweaver.kehl.io/guides/release-12-2-9/"
           class="text-cobalt hover:text-halo underline underline-offset-2"
           >Upgrade and rollback steps</a
         >
